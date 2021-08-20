@@ -1,9 +1,31 @@
 body {
   background-color: rgb(237, 239, 241);
+  padding: 0px;
+  margin: 0px;
 }
 #home {
   background-image: url("../images/car4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
+}
+
+.custom-form {
+  width: 40%;
+}
+.image-holder {
+  width: 50%;
+}
+#custom-image {
+  width: 100%;
+}
+.custom-booking-container {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-form {
+    width: 100%;
+    padding: 0px 20px;
+  }
 }

@@ -44,12 +44,12 @@
               <a class="nav-link" href="#feature">Features</a>
             </li>
             <li class="nav-item mx-md-5">
-              <a class="nav-link" href="./pages/contact.html">Contact Us</a>
+              <a class="nav-link" href="#contactus">Contact Us</a>
             </li>
             
           </ul>
           <span class="nav-item"
-            ><a href="#" class="nav-link text-light">LOG IN</a></span
+            ><a href="#" class="nav-link text-light " data-bs-toggle="modal" data-bs-target="#loginmodel">LOG IN</a></span
           >
         </div>
       </div>
@@ -57,6 +57,74 @@
     <!-- Home section -->
     <section id="home">
       <h1 class="text-center text-light py-5">The World of cars</h1>
+    </section>
+    <!-- login section -->
+    <section id="login">
+      <div class="modal fade" id="loginmodel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              </div>
+            </div>
+            <div class="mb-3 text-center ">Need an account? <a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#registermodel">Sign Up</a></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">LOG IN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Register acccount -->
+    <section id="register">
+      <div class="modal fade" id="registermodel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="name1" class="form-label">Name</label>
+                <input type="email" class="form-control" id="name1" aria-describedby="nameHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword2" class="form-label">Conform Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2">
+              </div>
+            </div>
+            <div class="mb-3 text-center ">Already have an account?  <a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginmodel">Sign In</a></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Sign Up</button>
+            </div>
+          </div>
+          </div>
+        </div>
     </section>
     <!-- features section -->
     <section id="pricing">
@@ -112,7 +180,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Tata Altroz</h5>
                   <p class="card-text">Rs: 5.84 - 9.59 Lakh*</p>
-                  <a href="#" class="btn btn-outline-warning ">Book Now</a>
+                  <a href="./pages/booknow.html" class="btn btn-outline-warning ">Book Now</a>
                 </div>
               </div>
             </div>
@@ -281,7 +349,30 @@
         </ul>
       </div>
     </section>
-    <div style="text-align: center;" class="my-5"><button class="btn btn-dark mx-auto">contact us</button></div>
+    <!-- contact us section -->
+    <section id="contactus">
+      <div class="container my-5 bg-light py-5 ">
+        
+        <div class="custom-form mx-auto" >
+          <h2 class="text-center my-3">Contact Us</h2>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="examplephone" class="form-label">Phone Number</label>
+              <input type="password" class="form-control" id="examplephone">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Leave your message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- footer -->
     <footer class="bg-light text-center text-lg-start">
       <!-- Copyright -->
