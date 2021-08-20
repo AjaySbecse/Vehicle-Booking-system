@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(237, 239, 241);
+}
+#home {
+  background-image: url("../images/car4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
